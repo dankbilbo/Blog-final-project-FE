@@ -1,1439 +1,621 @@
-<div class="wrapper">
-
-  <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="../assets/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-  </div>
-
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
-    </ul>
-
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Navbar Search -->
-      <li class="nav-item">
-        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-          <i class="fas fa-search"></i>
-        </a>
-        <div class="navbar-search-block">
-          <form class="form-inline">
-            <div class="input-group input-group-sm">
-              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-              <div class="input-group-append">
-                <button class="btn btn-navbar" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                  <i class="fas fa-times"></i>
-                </button>
-              </div>
+<header class="header-global">
+  <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary pt-4 navbar-dark">
+    <div class="container position-relative">
+      <div class="navbar-collapse collapse me-auto" id="navbar_global">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="./index.html">
+                <img src="./assets/img/brand/light.svg" alt="Volt logo">
+              </a>
             </div>
-          </form>
-        </div>
-      </li>
-
-      <!-- Messages Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-comments"></i>
-          <span class="badge badge-danger navbar-badge">3</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Brad Diesel
-                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">Call me whenever you can...</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
+            <div class="col-6 collapse-close">
+              <a href="#navbar_global" class="fas fa-times" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" title="close" aria-label="Toggle navigation"></a>
             </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  John Pierce
-                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">I got your message bro</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Nora Silvester
-                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">The subject goes here</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          </div>
         </div>
-      </li>
-      <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">15</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header">15 Notifications</span>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-envelope mr-2"></i> 4 new messages
-            <span class="float-right text-muted text-sm">3 mins</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-users mr-2"></i> 8 friend requests
-            <span class="float-right text-muted text-sm">12 hours</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-file mr-2"></i> 3 new reports
-            <span class="float-right text-muted text-sm">2 days</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <!-- /.navbar -->
-
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="../assets/dist/img/AdminLTELogo.png"  alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="../assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
-        </div>
+        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+          <li class="nav-item me-2">
+            <a href="./pages/dashboard/dashboard.html" class="nav-link">Dashboard</a>
+          </li>
+          <li class="nav-item me-2">
+            <a href="./pages/examples/sign-in.html" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item me-2">
+            <a href="./pages/examples/sign-up.html" class="nav-link">Register</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/examples/lock.html" class="nav-link">Lock</a>
+          </li>
+        </ul>
       </div>
+      <div class="d-flex align-items-center ms-auto">
+        <a href="#pricing" class="btn btn-outline-white me-md-3"><i class="fas fa-download me-2"></i> Download</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
 
-      <!-- SidebarSearch Form -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
+  <!-- Hero -->
+  <section class="section-header overflow-hidden pt-7 pt-lg-8 pb-9 pb-lg-12 bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="bootstrap-big-icon d-none d-lg-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="700" height="622" class="d-block my-1" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+          </div>
+          <h1 class="fw-bolder">Volt Bootstrap 5 Dashboard</h1>
+          <h2 class="lead fw-normal text-muted mb-5">Open source dashboard powered by Bootstrap 5</h2>
+          <!-- Button Modal -->
+          <div class="d-flex align-items-center justify-content-center mb-5">
+            <a href="./pages/dashboard/dashboard.html" class="btn btn-secondary text-dark me-4"><span class="fas fa-chart-line me-2 d-none d-sm-inline"></span> Dashboard Demo</a>
+            <div class="mb-lg-0 mt-1">
+              <a class="github-button" href="https://github.com/themesberg/volt-bootstrap-5-dashboard" data-color-scheme="no-preference: dark; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-bootstrap-5-dashboard on GitHub">Star</a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center flex-column mb-6 mb-lg-5">
+            <a href="https://themesberg.com" target="_blank">
+              <img src="src/assets/Admin template/html&css/assets/img/themesberg.svg" class="d-block mx-auto mb-3" height="25" width="25" alt="Themesberg Logo">
+              <span class="text-muted font-small">A Themesberg production</span>
+            </a>
           </div>
         </div>
       </div>
-
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-                <i class="right fas fa-angle-left"></i>
-              </p>
+    </div>
+    <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2"><svg class="fill-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4"><path d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path></svg></figure>
+  </section>
+  <div class="section pt-0">
+    <div class="container mt-n10 mt-lg-n12 z-2">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <img src="../assets/Admin template/html&css/assets/img/mockup-presentation.png" alt="Mockup presentation">
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section section-lg bg-soft pt-0">
+    <div class="container">
+      <div class="row justify-content-center mb-5 mb-lg-6">
+        <div class="col-6 col-md-3 text-center mb-4">
+          <div class="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle icon-secondary mb-4">
+            <span class="fas fa-pager"></span>
+          </div>
+          <h3 class="fw-bolder">10</h3>
+          <p class="text-gray">Dashboard Pages</p>
+        </div>
+        <div class="col-6 col-md-3 text-center mb-4">
+          <div class="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle icon-secondary mb-4">
+            <span class="fas fa-puzzle-piece"></span>
+          </div>
+          <h3 class="fw-bolder">100+</h3>
+          <p class="text-gray">Premium Components</p>
+        </div>
+        <div class="col-6 col-md-3 text-center">
+          <div class="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle icon-secondary mb-4">
+            <span class="fab fa-sass"></span>
+          </div>
+          <h3 class="fw-bolder">Workflow</h3>
+          <p class="text-gray">Sass & Gulp</p>
+        </div>
+        <div class="col-6 col-md-3 text-center">
+          <div class="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle icon-secondary mb-4">
+            <span class="fab fa-js-square"></span>
+          </div>
+          <h3 class="fw-bolder">Vanilla</h3>
+          <p class="text-gray">Javascript</p>
+        </div>
+      </div>
+      <div class="row justify-content-between align-items-center mb-5 mb-lg-7">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-5 order-lg-2 mb-5 mb-lg-0">
+            <h2 class="h1">Bootstrap 5</h2>
+            <p class="mb-4 lead fw-bold">Latest version of Bootstrap without jQuery</p>
+            <p class="mb-4">Volt is built using the latest version of Bootstrap 5 and we only used Vanilla Javascript for everything including the plugins</p>
+            <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/components/accordions/" target="_blank" class="btn btn-outline-primary"><span class="fas fa-book me-2"></span> Getting started</a>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <img src="./assets/img/illustrations/bs5-illustrations.svg" alt="Front pages overview">
+          </div>
+        </div>
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <h2 class="h1 d-flex align-items-center">Kanban Board <span class="badge-md ms-3 mb-0 fs-6 badge rounded-pill text-dark bg-secondary">Pro</span></h2>
+          <p class="mb-4 lead fw-bold">Advanced FullCalendar.js integration</p>
+          <p class="mb-4">We created a fully editable calendar where you can add, edit and delete events for your admin dashboard.</p>
+          <a href="https://demo.themesberg.com/volt-pro/pages/kanban.html" target="_blank" class="btn btn-secondary text-dark me-3"><span class="fas fa-th me-2"></span> Demo</a>
+          <!-- <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/plugins/kanban/" target="_blank" class="btn btn-outline-primary"><span class="fas fa-book me-2"></span> Guide</a> -->
+        </div>
+        <div class="col-lg-6">
+          <img src="./assets/img/mockup-kanban-presentation.png" alt="Kanban Preview">
+        </div>
+      </div>
+      <div class="row justify-content-between align-items-center mb-5 mb-lg-7">
+        <div class="col-lg-5 order-lg-2 mb-5 mb-lg-0">
+          <h2 class="h1 d-flex align-items-center">Mapbox <span class="badge-md ms-3 mb-0 fs-6 badge rounded-pill text-dark bg-secondary">Pro</span></h2>
+          <p class="mb-4 lead fw-bold">Markers and cards integration with Leaflet.js</p>
+          <p class="mb-4">You can use this map to add markers with custom cards and show them on a map using our custom MapBox integration with Leaflet.js</p>
+          <a href="https://demo.themesberg.com/volt-pro/pages/map.html" target="_blank" class="btn btn-secondary text-dark me-3"><span class="fas fa-map-marked-alt me-2"></span> Demo</a>
+          <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/plugins/mapbox/" target="_blank" class="btn btn-outline-primary"><span class="fas fa-book me-2"></span> Guide</a>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <img src="./assets/img/mockup-map-presentation.png" alt="MapBox Leaflet.js Custom Integration Mockup">
+        </div>
+      </div>
+      <div class="row justify-content-between align-items-center mb-5 mb-lg-7">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <h2 class="h1 d-flex align-items-center">Calendar <span class="badge-md ms-3 mb-0 fs-6 badge rounded-pill text-dark bg-secondary">Pro</span></h2>
+          <p class="mb-4 lead fw-bold">Advanced FullCalendar.js integration</p>
+          <p class="mb-4">We created a fully editable calendar where you can add, edit and delete events for your admin dashboard.</p>
+          <a href="https://demo.themesberg.com/volt-pro/pages/calendar.html" target="_blank" class="btn btn-secondary text-dark me-3"><span class="far fa-calendar-alt me-2"></span> Demo</a>
+          <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/plugins/calendar/" target="_blank" class="btn btn-outline-primary"><span class="fas fa-book me-2"></span> Guide</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="./assets/img/mockup-calendar-presentation.png" alt="Calendar Preview">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-sm pt-0">
+    <div class="container">
+      <div class="row justify-content-center mb-5 mb-lg-6">
+        <div class="col-12 text-center">
+          <h2 class="h1 px-lg-5">10 hand-crafted pages</h2>
+          <p class="lead px-lg-10">Every page from Volt has been carefully built to provide all the necessary pages your startup will require</p>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-6 mb-5">
+          <a href="./pages/dashboard/dashboard.html" class="page-preview scale-up-2">
+            <img class="shadow-lg rounded scale" src="./assets/img/pages/overview.jpg" alt="Dashboard page preview">
+            <div class="text-center show-on-hover rounded-bottom">
+              <h6 class="m-0 text-center text-white">Overview <i class="fas fa-external-link-alt ms-2"></i></h6>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 mb-5">
+          <a href="./pages/transactions.html" class="page-preview scale-up-2">
+            <img class="shadow-lg rounded scale" src="./assets/img/pages/transactions.jpg" alt="Transactions page preview">
+            <div class="text-center show-on-hover rounded-bottom">
+              <h6 class="m-0 text-center text-white">Transactions <i class="fas fa-external-link-alt ms-2"></i></h6>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 mb-5">
+          <a href="./pages/settings.html" class="page-preview scale-up-2">
+            <img class="shadow-lg rounded scale" src="./assets/img/pages/settings.jpg" alt="Settings page preview">
+            <div class="text-center show-on-hover rounded-bottom">
+              <h6 class="m-0 text-center text-white">Settings <i class="fas fa-external-link-alt ms-2"></i></h6>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 mb-5">
+          <a href="./pages/examples/sign-in.html" class="page-preview scale-up-2">
+            <img class="shadow-lg rounded scale" src="./assets/img/pages/sign-in.jpg" alt="Sign In page preview">
+            <div class="text-center show-on-hover rounded-bottom">
+              <h6 class="m-0 text-center text-white">Sign In <i class="fas fa-external-link-alt ms-2"></i></h6>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 mb-5">
+          <a href="./pages/examples/sign-up.html" class="page-preview scale-up-2">
+            <img class="shadow-lg rounded scale" src="./assets/img/pages/sign-up.jpg" alt="Sign Up page preview">
+            <div class="text-center show-on-hover rounded-bottom">
+              <h6 class="m-0 text-center text-white">Sign Up <i class="fas fa-external-link-alt ms-2"></i></h6>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 mb-5">
+          <a href="./pages/examples/lock.html" class="page-preview scale-up-2">
+            <img class="shadow-lg rounded scale" src="./assets/img/pages/lock.jpg" alt="Lock page preview">
+            <div class="text-center show-on-hover rounded-bottom">
+              <h6 class="m-0 text-center text-white">Sign Up <i class="fas fa-external-link-alt ms-2"></i></h6>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 mb-5">
+          <a href="./pages/examples/forgot-password.html" class="page-preview scale-up-2">
+            <img class="shadow-lg rounded scale" src="./assets/img/pages/forgot-password.jpg" alt="Forgot password preview">
+            <div class="text-center show-on-hover rounded-bottom">
+              <h6 class="m-0 text-center text-white">Forgot password <i class="fas fa-external-link-alt ms-2"></i></h6>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 mb-5">
+          <a href="./pages/examples/reset-password.html" class="page-preview scale-up-2">
+            <img class="shadow-lg rounded scale" src="./assets/img/pages/reset-password.jpg" alt="Reset password preview">
+            <div class="text-center show-on-hover rounded-bottom">
+              <h6 class="m-0 text-center text-white">Reset password <i class="fas fa-external-link-alt ms-2"></i></h6>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 mb-5">
+          <a href="./pages/examples/404.html" class="page-preview scale-up-2">
+            <img class="shadow-lg rounded scale" src="./assets/img/pages/404.jpg" alt="404 error preview">
+            <div class="text-center show-on-hover rounded-bottom">
+              <h6 class="m-0 text-center text-white">404 <i class="fas fa-external-link-alt ms-2"></i></h6>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 mb-5">
+          <a href="./pages/examples/500.html" class="page-preview scale-up-2">
+            <img class="shadow-lg rounded scale" src="./assets/img/pages/500.jpg" alt="500 error preview">
+            <div class="text-center show-on-hover rounded-bottom">
+              <h6 class="m-0 text-center text-white">500 <i class="fas fa-external-link-alt ms-2"></i></h6>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-lg bg-dark text-white">
+    <div class="container">
+      <div class="row justify-content-center mb-5 mb-lg-6">
+        <div class="col-12 text-center">
+          <h2 class="h1 px-lg-5">Awesome Features</h2>
+          <p class="lead px-lg-8">You get all Bootstrap components fully customized. Besides, you receive numerous plugins out of the box and ready to use.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-white shadow-soft text-primary rounded mb-4">
+            <div class="px-3 px-lg-4 py-5 text-center">
+              <span class="icon icon-lg mb-4"><span class="fab fa-bootstrap"></span></span>
+              <h5 class="fw-bold text-primary">Bootstrap 5</h5>
+              <p>Built with the most popular CSS Framework</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-white shadow-soft text-primary rounded mb-4">
+            <div class="px-3 px-lg-4 py-5 text-center">
+              <span class="icon icon-lg mb-4"><span class="fab fa-sass"></span></span>
+              <h5 class="fw-bold text-primary">Sass</h5>
+              <p>Variables and mixins to empower development</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-white shadow-soft text-primary rounded mb-4">
+            <div class="px-3 px-lg-4 py-5 text-center">
+              <span class="icon icon-lg mb-4"><span class="fas fa-mobile-alt"></span></span>
+              <h5 class="fw-bold text-primary">Responsive</h5>
+              <p>All pages and components are 100% responsive</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-white shadow-soft text-primary rounded mb-4">
+            <div class="px-3 px-lg-4 py-5 text-center">
+              <span class="icon icon-lg mb-4"><span class="fab fa-gulp"></span></span>
+              <h5 class="fw-bold text-primary">Gulp</h5>
+              <p>Gulp & BrowserSync for a flawless workflow</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-white shadow-soft text-primary rounded mb-4">
+            <div class="px-3 px-lg-4 py-5 text-center">
+              <span class="icon icon-lg mb-4"><span class="far fa-images"></span></span>
+              <h5 class="fw-bold text-primary">Creative rights</h5>
+              <p>All images, icons and fonts are licensed & free to use</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-white shadow-soft text-primary rounded mb-4">
+            <div class="px-3 px-lg-4 py-5 text-center">
+              <span class="icon icon-lg mb-4"><span class="far fa-file-alt"></span></span>
+              <h5 class="fw-bold text-primary">Documentation</h5>
+              <p>Everything that comes with Rocket is well documented</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-white shadow-soft text-primary rounded mb-4">
+            <div class="px-3 px-lg-4 py-5 text-center">
+              <span class="icon icon-lg mb-4"><span class="fab fa-accessible-icon"></span></span>
+              <h5 class="fw-bold text-primary">WCAG Accessibility</h5>
+              <p>Accessibility oriented design and functionality</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-white shadow-soft text-primary rounded mb-4">
+            <div class="px-3 px-lg-4 py-5 text-center">
+              <span class="icon icon-lg mb-4"><span class="fab fa-html5"></span></span>
+              <h5 class="fw-bold text-primary">W3C Validated</h5>
+              <p>HTML pages are all valid by W3C Standards</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-white shadow-soft text-primary rounded mb-4">
+            <div class="px-3 px-lg-4 py-5 text-center">
+              <span class="icon icon-lg mb-4"><span class="fab fa-js-square"></span></span>
+              <h5 class="fw-bold text-primary">Vanilla JS</h5>
+              <p>jQuery is not a required dependency for Volt</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-white shadow-soft text-primary rounded mb-4">
+            <div class="px-3 px-lg-4 py-5 text-center">
+              <span class="icon icon-lg mb-4"><span class="far fa-calendar-alt"></span></span>
+              <h5 class="fw-bold text-primary">Calendar</h5>
+              <p>Advanced integration with FullCalendar.js</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-white shadow-soft text-primary rounded mb-4">
+            <div class="px-3 px-lg-4 py-5 text-center">
+              <span class="icon icon-lg mb-4"><span class="fas fa-map-marked-alt"></span></span>
+              <h5 class="fw-bold text-primary">MapBox</h5>
+              <p>Custom integration with markers and cards</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card bg-white shadow-soft text-primary rounded mb-4">
+            <div class="px-3 px-lg-4 py-5 text-center">
+              <span class="icon icon-lg mb-4"><span class="fas fa-pen-fancy"></span></span>
+              <h5 class="fw-bold text-primary">Design</h5>
+              <p>Crafted by professional UI/UX designers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-lg line-bottom-soft">
+    <div class="container">
+      <div class="row justify-content-center mb-5 mb-lg-6">
+        <div class="col-12 text-center">
+          <h2 class="h1 px-lg-5">What's inside?</h2>
+          <p class="lead px-lg-8">We have carefully crafted the perfect folder structure to ensure that finding the files you're looking for are easily reachable and well organized.</p>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center">
+        <div class="col-12 col-lg-6 mb-4">
+          <div class="d-none d-lg-block mt-5">
+            <h4>You need only HTML, CSS and Javascript?</h4>
+            <p class="lead mb-4">Don't worry, we got you covered. We have a folder called <code class="text-danger">html&css</code> which includes only the basic HTML5, CSS3 and Javascript technologies.</p>
+            <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/file-structure/" target="_blank" class="btn btn-md btn-secondary text-dark"><i class="fas fa-book me-2"></i> Docs v1.3</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 order-lg-first d-flex justify-content-center">
+          <ul class="d-block fmw-100 list-style-none folder-structure">
+            <li data-bs-toggle="tooltip" data-bs-placement="left" title="Main folder that you will be working with"><i class="fas fa-folder me-2"></i>src</li>
+            <li>
+              <ul class="list-style-none ps-4">
+                <li data-bs-toggle="tooltip" data-bs-placement="left" title="CSS, Images, Fonts and Javascript"><i class="fas fa-folder me-2"></i> assets</li>
+                <li data-bs-toggle="tooltip" data-bs-placement="left" title="HTML templates"><i class="fas fa-folder me-2"></i> pages</li>
+                <li data-bs-toggle="tooltip" data-bs-placement="left" title="Partials are HTML snippets that are included in multiple pages, such as the menu or footer"><i class="fas fa-folder me-2"></i> partials</li>
+                <li data-bs-toggle="tooltip" data-bs-placement="left" title="Sass source files"><i class="fas fa-folder me-2"></i> scss</li>
+                <li data-bs-toggle="tooltip" data-bs-placement="left" title="The page you're looking at right now. Call it inception."><i class="fab fa-html5 me-2 text-secondary"></i> index.html</li>
+              </ul>
+            </li>
+            <li data-bs-toggle="tooltip" data-bs-placement="left" title="Rocket with only HTML, CSS and Javascript"><i class="fas fa-folder me-2 text-muted"></i> html&css</li>
+            <li data-bs-toggle="tooltip" data-bs-placement="left" title="Temporary folder that is created when serving files with BrowserSync"><i class="fas fa-folder text-muted me-2"></i>.temp</li>
+            <li data-bs-toggle="tooltip" data-bs-placement="left" title="Minified version of the project"><i class="fas fa-folder me-2 text-muted"></i> dist</li>
+            <li data-bs-toggle="tooltip" data-bs-placement="left" title="Project dependencies from package.json"><i class="fas fa-folder text-muted me-2"></i> node_modules
+            </li>
+            <li data-bs-toggle="tooltip" data-bs-placement="left" title="Development workflow commands. We have them well documented."><i class="fab fa-js-square me-2 text-warning"></i> gulpfile.js</li>
+            <li data-bs-toggle="tooltip" data-bs-placement="left" title="Project details and dependencies."><i class="fas fa-file-code me-2 text-tertiary"></i> package.json</li>
+            <li data-bs-toggle="tooltip" data-bs-placement="left" title="No project can miss a README :)"><i class="fas fa-file-code me-2 text-tertiary"></i> README.md</li>
+            <li data-bs-toggle="tooltip" data-bs-placement="left" title="This file ensures that generated files and folder are ignored by Git. (eg. node_modules)">
+              <i class="fas fa-file-code me-2 text-tertiary"></i> .gitignore</li>
+          </ul>
+        </div>
+        <div class="col-12 mt-5 d-lg-none">
+          <h5>You need only HTML, CSS and Javascript?</h5>
+          <p>Don't worry, we got you covered. We have a folder called <code class="text-danger">html&css</code> which includes only the basic HTML5, CSS3 and Javascript technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-lg bg-dark">
+    <div class="container">
+      <div class="row justify-content-center text-center text-white mb-5">
+        <div class="col-12">
+          <h2 class="h1 fw-light mb-3">Less <span class="fw-bold">work</span>, more <span class="fw-bold">flow</span>.</h2>
+          <p class="lead px-lg-8">
+            Boost productivity with BrowserSync. Sass changes are reflected instantly and pages scroll and refresh on devices as you work.
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-6">
+        <div class="col-md-10 col-xl-9">
+          <div class="position-relative">
+            <div class="rounded bg-white p-4 text-dark mb-2">
+              <div class="mb-3">
+                <div class="fw-bold">&gt; $ npm install</div>
+                <div class="text-gray">Everything’s installed!</div>
+              </div>
+              <div class="mb-3">
+                <div class="fw-bold">&gt; $ gulp</div>
+                <div class="text-gray">SCSS watching</div>
+                <div class="text-gray">LiveReload started</div>
+                <div class="text-gray">Opening localhost:3000</div>
+              </div>
+              <div>
+                <div class="fw-bold">&gt; $ that's it?</div>
+                <div class="text-gray">It's that simple!</div>
+              </div>
+            </div>
+          </div>
+          <p class="mt-4 text-white text-center">Looks unfamiliar? Don’t worry! Our <a class="text-white text-underline fw-bold" href="https://themesberg.com/docs/rocket/getting-started/overview/" target="_blank">documentation</a> has got you covered.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-lg bg-white" id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <h2 class="h1 fw-bold mb-3">Open source</h2>
+          <p class="lead mb-4">Volt is an open source project under the MIT License. Give us a lucky star to spread the open source love ❤️</p>
+          <div class="d-flex align-items-center">
+            <a href="https://github.com/themesberg/volt-bootstrap-5-dashboard" target="_blank" class="btn btn-dark me-4">
+              View on GitHub
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="./index.html" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index3.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
-              </p>
+            <!-- Place this tag where you want the button to render. -->
+            <div class="mt-2">
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/themesberg/volt-bootstrap-5-dashboard" data-color-scheme="no-preference: dark; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star /themesberg/volt-bootstrap-5-dashboard on GitHub">Star</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="github-big-icon">
+            <span class="fab fa-github"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-6">
+        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <div class="card shadow-sm p-4">
+            <!-- Header -->
+            <div class="card-header bg-white border-0 pb-0">
+                                <span class="d-block">
+                                    <span class="h2 text-primary fw-bold align-top">Free Demo</span>
+                                </span>
+            </div>
+            <!-- End Header -->
+            <!-- Content -->
+            <div class="card-body">
+              <ul class="list-group list-group-flush price-list">
+                <li class="list-group-item bg-white border-0 ps-0"><strong>100</strong> Components</li>
+                <li class="list-group-item bg-white border-0 ps-0"><strong>11</strong> Example Pages</li>
+                <li class="list-group-item bg-white border-0 ps-0"><span class="icon-danger me-2"><span class="fas fa-times-circle"></span></span> MapBox</li>
+                <li class="list-group-item bg-white border-0 ps-0"><span class="icon-danger me-2"><span class="fas fa-times-circle"></span></span> Calendar</li>
+                <li class="list-group-item bg-white border-0 ps-0"><span class="icon-danger me-2"><span class="fas fa-times-circle"></span></span> SVG Map</li>
+                <li class="list-group-item bg-white border-0 ps-0"><span class="icon-danger me-2"><span class="fas fa-times-circle"></span></span> Widgets</li>
+                <li class="list-group-item bg-white border-0 ps-0 pb-0"><span class="icon-danger me-2"><span class="fas fa-times-circle"></span></span> Premium Support</li>
+              </ul>
+            </div>
+            <!-- End Content -->
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <div class="card shadow-sm p-4 py-5 mt-lg-n5">
+            <!-- Header -->
+            <div class="card-header bg-white border-0 pb-0">
+                                <span class="d-block">
+                                    <span class="h2 text-primary fw-bold align-top">Pro Version</span>
+                                </span>
+            </div>
+            <!-- End Header -->
+            <!-- Content -->
+            <div class="card-body">
+              <ul class="list-group list-group-flush price-list">
+                <li class="list-group-item bg-white border-0 ps-0"><strong>1000+</strong> Components</li>
+                <li class="list-group-item bg-white border-0 ps-0"><strong>20</strong> Example Pages</li>
+                <li class="list-group-item bg-white border-0 ps-0">Dashboard included</li>
+                <li class="list-group-item bg-white border-0 ps-0"><span class="icon-success me-2"><span class="fas fa-check-circle"></span></span> MapBox</li>
+                <li class="list-group-item bg-white border-0 ps-0"><span class="icon-success me-2"><span class="fas fa-check-circle"></span></span> Calendar</li>
+                <li class="list-group-item bg-white border-0 ps-0"><span class="icon-success me-2"><span class="fas fa-check-circle"></span></span> SVG Map</li>
+                <li class="list-group-item bg-white border-0 ps-0"><span class="icon-success me-2"><span class="fas fa-check-circle"></span></span> Widgets</li>
+                <li class="list-group-item bg-white border-0 border-0 ps-0 pb-0"><span class="icon-success me-2"><span class="fas fa-check-circle"></span></span> Premium Support</li>
+              </ul>
+            </div>
+            <a href="https://demo.themesberg.com/volt-pro/index.html" target="_blank" class="btn btn-secondary d-flex align-items-center justify-content-center mb-0 mt-2">Demo Volt Pro <i class="fas fa-external-link-alt ms-2"></i></a>
+            <!-- End Content -->
+          </div>
+        </div>
+      </div>
+      <div class="mt-lg-6 row">
+        <div class="text-center col-12">
+          <h2 class="h5 text-gray fw-normal mb-4">Available in the following technologies:</h2>
+          <div>
+            <a class="me-3 card-link" href="https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard" target="_blank">
+              <img src="./assets/img/technologies/bootstrap-5-logo.svg" class="image image-sm">
             </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-                Layout Options
-                <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
-              </p>
+            <a class="me-3 card-link" href="https://demo.themesberg.com/volt-react-dashboard/#/" target="_blank">
+              <img src="./assets/img/technologies/react-logo.svg" class="image image-sm">
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation + Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/boxed.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Boxed</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar <small>+ Custom Area</small></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-topnav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Navbar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-footer.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Footer</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Collapsed Sidebar</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Charts
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/inline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/uplot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>uPlot</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tree"></i>
-              <p>
-                UI Elements
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/UI/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/icons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Icons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/buttons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Buttons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/sliders.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sliders</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/modals.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Modals & Alerts</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/navbar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Navbar & Tabs</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/timeline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Timeline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/ribbons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Ribbons</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-                Forms
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/forms/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General Elements</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/advanced.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Advanced Elements</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/editors.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Editors</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Validation</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                Tables
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>DataTables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/jsgrid.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>jsGrid</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-header">EXAMPLES</li>
-          <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
-              <i class="nav-icon far fa-calendar-alt"></i>
-              <p>
-                Calendar
-                <span class="badge badge-info right">2</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
-              <i class="nav-icon far fa-image"></i>
-              <p>
-                Gallery
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/kanban.html" class="nav-link">
-              <i class="nav-icon fas fa-columns"></i>
-              <p>
-                Kanban Board
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-envelope"></i>
-              <p>
-                Mailbox
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/mailbox/mailbox.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inbox</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/mailbox/compose.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Compose</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/mailbox/read-mail.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Read</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Pages
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/examples/invoice.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Invoice</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/profile.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Profile</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/e-commerce.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>E-commerce</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/projects.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Projects</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-add.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Add</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-edit.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Edit</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-detail.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Detail</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/contacts.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contacts</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/faq.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>FAQ</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/contact-us.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contact us</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-plus-square"></i>
-              <p>
-                Extras
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Login & Register v1
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="pages/examples/login.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Login v1</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/register.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Register v1</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/forgot-password.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Forgot Password v1</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/recover-password.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Recover Password v1</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Login & Register v2
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="pages/examples/login-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Login v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/register-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Register v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/forgot-password-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Forgot Password v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/recover-password-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Recover Password v2</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/lockscreen.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lockscreen</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/legacy-user-menu.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Legacy User Menu</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/language-menu.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Language Menu</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/404.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Error 404</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/500.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Error 500</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/pace.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pace</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/blank.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Blank Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="starter.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Starter Page</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-search"></i>
-              <p>
-                Search
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/search/simple.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Search</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/search/enhanced.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Enhanced</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-header">MISCELLANEOUS</li>
-          <li class="nav-item">
-            <a href="iframe.html" class="nav-link">
-              <i class="nav-icon fas fa-ellipsis-h"></i>
-              <p>Tabbed IFrame Plugin</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer py-6 bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img class="navbar-brand-dark mb-4" height="35" src="./assets/img/brand/light.svg" alt="Logo light">
+        <p>Volt is a Premium Bootstrap 5 Admin Dashboard bringing together beautiful UI/UX design and functional elements.</p>
+        <ul class="social-buttons mb-5 mb-lg-0">
+          <li>
+            <a href="https://twitter.com/themesberg" aria-label="twitter social link" class="icon-white me-2">
+              <span class="fab fa-twitter"></span>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="https://adminlte.io/docs/3.1/" class="nav-link">
-              <i class="nav-icon fas fa-file"></i>
-              <p>Documentation</p>
+          <li>
+            <a href="https://www.facebook.com/themesberg/" class="icon-white me-2" aria-label="facebook social link">
+              <span class="fab fa-facebook"></span>
             </a>
           </li>
-          <li class="nav-header">MULTI LEVEL EXAMPLE</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-circle nav-icon"></i>
-              <p>Level 1</p>
+          <li>
+            <a href="https://github.com/themesberg" aria-label="github social link" class="icon-white me-2">
+              <span class="fab fa-github"></span>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-circle"></i>
-              <p>
-                Level 1
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Level 2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Level 2
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Level 2</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-circle nav-icon"></i>
-              <p>Level 1</p>
-            </a>
-          </li>
-          <li class="nav-header">LABELS</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-danger"></i>
-              <p class="text">Important</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-warning"></i>
-              <p>Warning</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-info"></i>
-              <p>Informational</p>
+          <li>
+            <a href="https://dribbble.com/themesberg" class="icon-white" aria-label="dribbble social link" >
+              <span class="fab fa-dribbble"></span>
             </a>
           </li>
         </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
+      </div>
+      <div class="col-6 col-md-2 mb-5 mb-lg-0">
+        <span class="h5">Themesberg</span>
+        <ul class="links-vertical mt-2">
+          <li><a target="_blank" href="https://themesberg.com/blog">Blog</a></li>
+          <li><a target="_blank" href="https://themesberg.com/products">Products</a></li>
+          <li><a target="_blank" href="https://themesberg.com/about">About Us</a></li>
+          <li><a target="_blank" href="https://themesberg.com/contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2 mb-5 mb-lg-0">
+        <span class="h5">Other</span>
+        <ul class="links-vertical mt-2">
+          <li><a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/quick-start/" target="_blank">Docs
+            <span class="badge badge-sm bg-secondary text-dark ms-2">v1.3</span></a></li>
+          <li><a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/changelog/" target="_blank">Changelog</a></li>
+          <li><a target="_blank" href="https://themesberg.com/licensing">License</a>
+          </li>
+          <li><a target="_blank" href="https://themesberg.com/contact">Support</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4 mb-5 mb-lg-0">
+        <span class="h5 mb-3 d-block">Subscribe</span>
+        <form action="#">
+          <div class="form-row mb-2">
+            <div class="col-12">
+              <input type="email" class="form-control mb-2" placeholder="example@company.com" name="email" aria-label="Subscribe form" required>
+            </div>
+            <div class="col-12 d-grid">
+              <button type="submit" class="btn btn-secondary" data-loading-text="Sending">
+                <span>Subscribe</span>
+              </button>
+            </div>
+          </div>
+        </form>
+        <p class="text-muted font-small m-0">We’ll never share your details. See our <a class="text-white" href="#">Privacy Policy</a></p>
+      </div>
     </div>
-    <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+    <hr class="bg-gray-700 my-5">
+    <div class="row">
+      <div class="col mb-md-0">
+        <a href="https://themesberg.com" target="_blank" class="d-flex justify-content-center">
+          <img src="./assets/img/themesberg-logo-alt.svg" height="35" class="mb-4" alt="Themesberg Logo">
+        </a>
+        <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
+          <p class="fw-normal font-small mb-0">Copyright © Themesberg 2019-<span class="current-year">2021</span>. All rights reserved.</p>
+        </div>
+      </div>
     </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
-        <div class="row">
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>150</h3>
-
-                <p>New Orders</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                <p>Bounce Rate</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>44</h3>
-
-                <p>User Registrations</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>65</h3>
-
-                <p>Unique Visitors</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-        </div>
-        <!-- /.row -->
-        <!-- Main row -->
-        <div class="row">
-          <!-- Left col -->
-          <section class="col-lg-7 connectedSortable">
-            <!-- Custom tabs (Charts with tabs)-->
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="fas fa-chart-pie mr-1"></i>
-                  Sales
-                </h3>
-                <div class="card-tools">
-                  <ul class="nav nav-pills ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#revenue-chart" data-toggle="tab">Area</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#sales-chart" data-toggle="tab">Donut</a>
-                    </li>
-                  </ul>
-                </div>
-              </div><!-- /.card-header -->
-              <div class="card-body">
-                <div class="tab-content p-0">
-                  <!-- Morris chart - Sales -->
-                  <div class="chart tab-pane active" id="revenue-chart"
-                       style="position: relative; height: 300px;">
-                    <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>
-                  </div>
-                  <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;">
-                    <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
-                  </div>
-                </div>
-              </div><!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-
-            <!-- DIRECT CHAT -->
-            <div class="card direct-chat direct-chat-primary">
-              <div class="card-header">
-                <h3 class="card-title">Direct Chat</h3>
-
-                <div class="card-tools">
-                  <span title="3 New Messages" class="badge badge-primary">3</span>
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
-                    <i class="fas fa-comments"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <!-- Conversations are loaded here -->
-                <div class="direct-chat-messages">
-                  <!-- Message. Default to the left -->
-                  <div class="direct-chat-msg">
-                    <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-left">Alexander Pierce</span>
-                      <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                    </div>
-                    <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      Is this template really for free? That's unbelievable!
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                  <!-- Message to the right -->
-                  <div class="direct-chat-msg right">
-                    <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-right">Sarah Bullock</span>
-                      <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                    </div>
-                    <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      You better believe it!
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                  <!-- Message. Default to the left -->
-                  <div class="direct-chat-msg">
-                    <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-left">Alexander Pierce</span>
-                      <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
-                    </div>
-                    <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      Working with AdminLTE on a great new app! Wanna join?
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                  <!-- Message to the right -->
-                  <div class="direct-chat-msg right">
-                    <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-right">Sarah Bullock</span>
-                      <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
-                    </div>
-                    <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      I would love to.
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                </div>
-                <!--/.direct-chat-messages-->
-
-                <!-- Contacts are loaded here -->
-                <div class="direct-chat-contacts">
-                  <ul class="contacts-list">
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="dist/img/user1-128x128.jpg" alt="User Avatar">
-
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            Count Dracula
-                            <small class="contacts-list-date float-right">2/28/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">How have you been? I was...</span>
-                        </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="dist/img/user7-128x128.jpg" alt="User Avatar">
-
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            Sarah Doe
-                            <small class="contacts-list-date float-right">2/23/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">I will be waiting for...</span>
-                        </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="dist/img/user3-128x128.jpg" alt="User Avatar">
-
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            Nadia Jolie
-                            <small class="contacts-list-date float-right">2/20/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">I'll call you back at...</span>
-                        </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="dist/img/user5-128x128.jpg" alt="User Avatar">
-
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            Nora S. Vans
-                            <small class="contacts-list-date float-right">2/10/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">Where is your new...</span>
-                        </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="dist/img/user6-128x128.jpg" alt="User Avatar">
-
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            John K.
-                            <small class="contacts-list-date float-right">1/27/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">Can I take a look at...</span>
-                        </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="dist/img/user8-128x128.jpg" alt="User Avatar">
-
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            Kenneth M.
-                            <small class="contacts-list-date float-right">1/4/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">Never mind I found...</span>
-                        </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                  </ul>
-                  <!-- /.contacts-list -->
-                </div>
-                <!-- /.direct-chat-pane -->
-              </div>
-              <!-- /.card-body -->
-              <div class="card-footer">
-                <form action="#" method="post">
-                  <div class="input-group">
-                    <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                    <span class="input-group-append">
-                      <button type="button" class="btn btn-primary">Send</button>
-                    </span>
-                  </div>
-                </form>
-              </div>
-              <!-- /.card-footer-->
-            </div>
-            <!--/.direct-chat -->
-
-            <!-- TO DO List -->
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="ion ion-clipboard mr-1"></i>
-                  To Do List
-                </h3>
-
-                <div class="card-tools">
-                  <ul class="pagination pagination-sm">
-                    <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
-                    <li class="page-item"><a href="#" class="page-link">1</a></li>
-                    <li class="page-item"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item"><a href="#" class="page-link">3</a></li>
-                    <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
-                  </ul>
-                </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <ul class="todo-list" data-widget="todo-list">
-                  <li>
-                    <!-- drag handle -->
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                    <!-- checkbox -->
-                    <div  class="icheck-primary d-inline ml-2">
-                      <input type="checkbox" value="" name="todo1" id="todoCheck1">
-                      <label for="todoCheck1"></label>
-                    </div>
-                    <!-- todo text -->
-                    <span class="text">Design a nice theme</span>
-                    <!-- Emphasis label -->
-                    <small class="badge badge-danger"><i class="far fa-clock"></i> 2 mins</small>
-                    <!-- General tools such as edit or delete-->
-                    <div class="tools">
-                      <i class="fas fa-edit"></i>
-                      <i class="fas fa-trash-o"></i>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                    <div  class="icheck-primary d-inline ml-2">
-                      <input type="checkbox" value="" name="todo2" id="todoCheck2" checked>
-                      <label for="todoCheck2"></label>
-                    </div>
-                    <span class="text">Make the theme responsive</span>
-                    <small class="badge badge-info"><i class="far fa-clock"></i> 4 hours</small>
-                    <div class="tools">
-                      <i class="fas fa-edit"></i>
-                      <i class="fas fa-trash-o"></i>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                    <div  class="icheck-primary d-inline ml-2">
-                      <input type="checkbox" value="" name="todo3" id="todoCheck3">
-                      <label for="todoCheck3"></label>
-                    </div>
-                    <span class="text">Let theme shine like a star</span>
-                    <small class="badge badge-warning"><i class="far fa-clock"></i> 1 day</small>
-                    <div class="tools">
-                      <i class="fas fa-edit"></i>
-                      <i class="fas fa-trash-o"></i>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                    <div  class="icheck-primary d-inline ml-2">
-                      <input type="checkbox" value="" name="todo4" id="todoCheck4">
-                      <label for="todoCheck4"></label>
-                    </div>
-                    <span class="text">Let theme shine like a star</span>
-                    <small class="badge badge-success"><i class="far fa-clock"></i> 3 days</small>
-                    <div class="tools">
-                      <i class="fas fa-edit"></i>
-                      <i class="fas fa-trash-o"></i>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                    <div  class="icheck-primary d-inline ml-2">
-                      <input type="checkbox" value="" name="todo5" id="todoCheck5">
-                      <label for="todoCheck5"></label>
-                    </div>
-                    <span class="text">Check your messages and notifications</span>
-                    <small class="badge badge-primary"><i class="far fa-clock"></i> 1 week</small>
-                    <div class="tools">
-                      <i class="fas fa-edit"></i>
-                      <i class="fas fa-trash-o"></i>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                    <div  class="icheck-primary d-inline ml-2">
-                      <input type="checkbox" value="" name="todo6" id="todoCheck6">
-                      <label for="todoCheck6"></label>
-                    </div>
-                    <span class="text">Let theme shine like a star</span>
-                    <small class="badge badge-secondary"><i class="far fa-clock"></i> 1 month</small>
-                    <div class="tools">
-                      <i class="fas fa-edit"></i>
-                      <i class="fas fa-trash-o"></i>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- /.card-body -->
-              <div class="card-footer clearfix">
-                <button type="button" class="btn btn-primary float-right"><i class="fas fa-plus"></i> Add item</button>
-              </div>
-            </div>
-            <!-- /.card -->
-          </section>
-          <!-- /.Left col -->
-          <!-- right col (We are only adding the ID to make the widgets sortable)-->
-          <section class="col-lg-5 connectedSortable">
-
-            <!-- Map card -->
-            <div class="card bg-gradient-primary">
-              <div class="card-header border-0">
-                <h3 class="card-title">
-                  <i class="fas fa-map-marker-alt mr-1"></i>
-                  Visitors
-                </h3>
-                <!-- card tools -->
-                <div class="card-tools">
-                  <button type="button" class="btn btn-primary btn-sm daterange" title="Date range">
-                    <i class="far fa-calendar-alt"></i>
-                  </button>
-                  <button type="button" class="btn btn-primary btn-sm" data-card-widget="collapse" title="Collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                </div>
-                <!-- /.card-tools -->
-              </div>
-              <div class="card-body">
-                <div id="world-map" style="height: 250px; width: 100%;"></div>
-              </div>
-              <!-- /.card-body-->
-              <div class="card-footer bg-transparent">
-                <div class="row">
-                  <div class="col-4 text-center">
-                    <div id="sparkline-1"></div>
-                    <div class="text-white">Visitors</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-4 text-center">
-                    <div id="sparkline-2"></div>
-                    <div class="text-white">Online</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-4 text-center">
-                    <div id="sparkline-3"></div>
-                    <div class="text-white">Sales</div>
-                  </div>
-                  <!-- ./col -->
-                </div>
-                <!-- /.row -->
-              </div>
-            </div>
-            <!-- /.card -->
-
-            <!-- solid sales graph -->
-            <div class="card bg-gradient-info">
-              <div class="card-header border-0">
-                <h3 class="card-title">
-                  <i class="fas fa-th mr-1"></i>
-                  Sales Graph
-                </h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn bg-info btn-sm" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn bg-info btn-sm" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="card-body">
-                <canvas class="chart" id="line-chart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-              </div>
-              <!-- /.card-body -->
-              <div class="card-footer bg-transparent">
-                <div class="row">
-                  <div class="col-4 text-center">
-                    <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60"
-                           data-fgColor="#39CCCC">
-
-                    <div class="text-white">Mail-Orders</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-4 text-center">
-                    <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60"
-                           data-fgColor="#39CCCC">
-
-                    <div class="text-white">Online</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-4 text-center">
-                    <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60"
-                           data-fgColor="#39CCCC">
-
-                    <div class="text-white">In-Store</div>
-                  </div>
-                  <!-- ./col -->
-                </div>
-                <!-- /.row -->
-              </div>
-              <!-- /.card-footer -->
-            </div>
-            <!-- /.card -->
-
-            <!-- Calendar -->
-            <div class="card bg-gradient-success">
-              <div class="card-header border-0">
-
-                <h3 class="card-title">
-                  <i class="far fa-calendar-alt"></i>
-                  Calendar
-                </h3>
-                <!-- tools card -->
-                <div class="card-tools">
-                  <!-- button with a dropdown -->
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
-                      <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="dropdown-menu" role="menu">
-                      <a href="#" class="dropdown-item">Add new event</a>
-                      <a href="#" class="dropdown-item">Clear events</a>
-                      <div class="dropdown-divider"></div>
-                      <a href="#" class="dropdown-item">View calendar</a>
-                    </div>
-                  </div>
-                  <button type="button" class="btn btn-success btn-sm" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-success btn-sm" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-                <!-- /. tools -->
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body pt-0">
-                <!--The calendar -->
-                <div id="calendar" style="width: 100%"></div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </section>
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.1.0-rc
-    </div>
-  </footer>
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
+</footer>
